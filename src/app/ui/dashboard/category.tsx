@@ -2,36 +2,19 @@ import React from "react";
 import { FaAngleRight } from "react-icons/fa6";
 import Card from "./card";
 
+import image1 from "@/app/assets/images/foods/bun-bo-hue.png";
+import image2 from "@/app/assets/images/foods/com_tam_suon_bi.png";
+
 const data = [
-  { title: "Cơm tấm", price: 99, imagePath: "https://via.placeholder.com/250" },
-  { title: "Cơm tấm", price: 99, imagePath: "https://via.placeholder.com/250" },
-  {
-    title: "Bún Boà",
-    price: 199,
-    imagePath: "https://via.placeholder.com/250",
-  },
-  {
-    title: "Bún Boà",
-    price: 199,
-    imagePath: "https://via.placeholder.com/250",
-  },
-  { title: "Cơm tấm", price: 99, imagePath: "https://via.placeholder.com/250" },
-  {
-    title: "Bún Boà",
-    price: 199,
-    imagePath: "https://via.placeholder.com/250",
-  },
-  {
-    title: "Bún Boà",
-    price: 199,
-    imagePath: "https://via.placeholder.com/250",
-  },
-  { title: "Cơm tấm", price: 99, imagePath: "https://via.placeholder.com/250" },
-  {
-    title: "Bún Boà",
-    price: 199,
-    imagePath: "https://via.placeholder.com/250",
-  },
+  { title: "Cơm tấm", price: 99, imagePath: image2 },
+  { title: "Cơm tấm", price: 99, imagePath: image2 },
+  { title: "Bún Boà", price: 199, imagePath: image1 },
+  { title: "Bún Boà", price: 199, imagePath: image1 },
+  { title: "Cơm tấm", price: 99, imagePath: image2 },
+  { title: "Bún Boà", price: 199, imagePath: image1 },
+  { title: "Bún Boà", price: 199, imagePath: image1 },
+  { title: "Cơm tấm", price: 99, imagePath: image2 },
+  { title: "Bún Boà", price: 199, imagePath: image1 },
 ];
 
 export default function Category({ title }: { title: string }) {

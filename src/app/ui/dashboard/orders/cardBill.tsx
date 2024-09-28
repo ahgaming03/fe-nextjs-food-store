@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { FaAngleRight } from "react-icons/fa6";
-import defaultImage from "@/images/default-image.png";
+import defaultImage from "@/app/assets/images/default-image.png";
 
 export default function CardBill() {
   return (

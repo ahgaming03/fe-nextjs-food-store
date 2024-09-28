@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-// import defaultImage from "@/images/default-image.png";
+import defaultImage from "@/app/assets/images/default-image.png";
 import ItemList from "@/app/ui/dashboard/account/item-list";
 
 import { ImProfile } from "react-icons/im";
@@ -18,8 +18,8 @@ export default function Page() {
       <div className="space-y-2">
         <div className="space-y-4 bg-white py-4 text-center">
           <div className="mx-auto h-32 w-32">
-            <img
-              src={"https://via.placeholder.com/150"}
+            <Image
+              src={defaultImage}
               alt="default image"
               className="h-full w-full rounded-full border object-cover shadow"
             />

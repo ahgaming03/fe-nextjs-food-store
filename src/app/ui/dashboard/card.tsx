@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface CardProps {
-  imagePath: string;
+  imagePath: string | StaticImageData;
   title: string;
   price: number;
 }
@@ -12,7 +12,7 @@ export default function Card({ imagePath, title, price }: CardProps) {
     <>
       <div className="rounded border bg-gray-50">
         <div className="aspect-square w-full">
-          <img
+          <Image
             src={imagePath}
             alt={title}
             className="h-full w-full rounded-t-[0.1875rem] object-cover"
