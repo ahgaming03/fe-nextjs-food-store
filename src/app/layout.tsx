@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import NavLinks from "./ui/dashboard/nav-links";
 import { Header } from "./ui/header";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,7 +34,11 @@ export default function RootLayout({
       >
         <div className="grid min-h-screen grid-rows-[4rem_1fr]">
           <Header />
-          <main className="bg-gray-100">{children}</main>
+          <main className="bg-gray-100">
+            {children}
+            <SpeedInsights />
+            <Analytics />
+          </main>
           <footer className="sticky bottom-0 z-50 flex items-center justify-around border-t bg-white py-2 shadow">
             <NavLinks />
           </footer>
