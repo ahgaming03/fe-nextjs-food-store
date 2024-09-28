@@ -1,7 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import React, { use, useEffect, useState } from "react";
+import React, { useState } from "react";
+
+import defaultImage from "@/app/assets/images/default-image.png";
 
 export default function Page() {
   const [originProfile, setOriginProfile] = useState({
@@ -19,8 +22,8 @@ export default function Page() {
       <div className="space-y-2">
         <div className="space-y-4 bg-white py-4 text-center">
           <div className="mx-auto h-32 w-32">
-            <img
-              src={"https://via.placeholder.com/150"}
+            <Image
+              src={defaultImage}
               alt="default image"
               className="h-full w-full rounded-full border object-cover shadow"
             />

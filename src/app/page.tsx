@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-import { MdLocationOn } from "react-icons/md";
-import { FaAngleRight } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
 import { IoIosCloseCircle } from "react-icons/io";
 import Category from "./ui/dashboard/category";

@@ -1,4 +1,7 @@
+import Image from "next/image";
 import React from "react";
+
+import defaultImage from "@/app/assets/images/default-image.png";
 
 export default function ItemCart() {
   return (
@@ -7,8 +10,8 @@ export default function ItemCart() {
         <div className="flex items-center justify-between p-2">
           <div className="flex items-center gap-2">
             <div className="h-16 w-16 bg-gray-200">
-              <img
-                src="https://via.placeholder.com/150"
+              <Image
+                src={defaultImage}
                 alt="product"
                 className="h-full w-full object-cover"
               />
