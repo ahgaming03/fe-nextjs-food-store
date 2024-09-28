@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: next-js
+    runtime: node
+    plan: starter
+    buildCommand: yarn; yarn build
+    startCommand: yarn start
+    autoDeploy: false
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - type: web
+        name: nextjs-static
+        runtime: static
+        buildCommand: yarn; yarn build
+        staticPublishPath: out
+        pullRequestPreviewsEnabled: true
+        envVars:
+          - key: NODE_ENV
+            value: production
